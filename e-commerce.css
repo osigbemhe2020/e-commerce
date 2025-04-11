@@ -1,0 +1,165 @@
+.top-head{
+    display: grid;
+    grid-template-columns: 33% 34% 33%;
+    background-color: rgb(4, 50, 5);
+    color: white;
+    padding-top: 0.5em;
+    padding-bottom:0em;
+}
+#one{
+    padding-left: 3.3em;
+}
+#two{
+    text-align: center;
+}
+#three{
+    text-align: right;
+    padding-right: 3.5em;
+}
+#three span{
+    margin: auto 1em;
+}
+header{
+    padding: 1.4em 3.5em;
+    display: grid;
+    grid-template-columns: 10% 50% 25% 15%;
+}
+.nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0.1em 1em;
+    overflow: hidden;
+}
+.nav ul li{
+    float:left;
+    flex-wrap: nowrap;
+}
+.nav ul li a{
+    display: block; 
+    width: 140px;
+    padding: 4px 10px;
+    text-align:left;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+ header input[type=text]{
+    width: 95%;
+    border-radius: 12px;
+    padding: 4px;
+    background-color: rgba(235, 232, 232, 0.8);
+}
+#four{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.ad{
+    height: 260px;
+    background-color: bisque;
+    padding: 2.5em;
+    margin: 0.8em 3.2em;
+    display: grid;
+    grid-template-columns: 55% 45%;
+}
+.ad-text{
+    padding: 0em 1.8em;
+}
+.ad-text h1{
+    font-weight: 600;
+    color: rgb(4, 50, 5);
+    text-transform: capitalize;
+    font-size: 2.8em;
+}
+.ad-text button{
+    padding: 0.5em 1.5em;
+    background-color: rgb(4, 50, 5);
+    color: white;
+    border-top-left-radius: 90vmax;
+    border-top-right-radius: 90vmax;
+    border-bottom-right-radius: 90vmax;
+    border-bottom-left-radius: 90vmax;
+    font-weight: 600;
+}
+.cat{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 65%;
+}
+.back{
+    border: 1px grey solid;
+    border-radius: 50%;
+    background-color: rgba(167, 166, 166, 0.1);
+    padding: 1.5em;
+}
+.phones{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    gap:1.5em;
+    margin: 3em 3.2em;
+    max-width: 1170px;
+}
+#card{
+    padding:1.6em 0em 0em 0em;
+    background-color: rgba(167, 166, 166, 0.1);
+    outline: none;
+    border: none;
+}
+.pic{
+    z-index: -1; 
+    max-width: 200px; 
+    margin-left: 2.5em;
+    margin-bottom: 1.5em;
+}
+.pi2{
+    background-color: rgb(167, 166, 166, );
+    z-index: -1;
+}
+.cat-cont{
+    margin:0.5em 3.2em ;
+    border:1px rgb(236, 228, 214) solid;
+    background-color: rgba(241, 241, 237, 0.1);
+    padding: 0.5em 1.5em 1.5em;
+    border-radius: 30px;
+}
+.text{
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-left: 1em;
+    margin-top: 0.2em;
+}
+@media only screen and (max-width:600px) {
+    body{
+        overflow:scroll;
+    }
+    .top-head{
+       width: 200%;
+       grid-template-columns: 32% 36% 32%;
+    }
+    header{
+        width: 200%; 
+    }
+    .ad{
+        height: auto;
+        width: 185%; 
+        
+    }
+    .cat{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .cat-cont{
+       width: 180%;
+    }
+    .phones{
+        max-width: 200vh;
+        width: 160%;
+    }
+    .phones img{
+        width: 150px;
+        height: 150px;
+    }
+}
